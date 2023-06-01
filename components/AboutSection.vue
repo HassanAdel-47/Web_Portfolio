@@ -47,10 +47,24 @@
     >
       <img src="../public/assets/images/about en.png" alt="" />
     </div>
+    <input v-model="myname" placeholder="Enter your name" />
+    <p>Welcome, {{ fullName }}</p>
   </section>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      myname: "",
+      fullName: "",
+    };
+  },
+  watch: {
+    myname(newName) {
+      return (this.fullName = newName);
+    },
+  },
+};
 </script>
 
 <style></style>
