@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev:host": "nuxt --hostname 192.168.0.191 --port:8000",
+    "dev:host": "nuxt --hostname 192.168.43.60 --port:8000",
     "build": "nuxt build",
     "start": "nuxt start",
     "dev": "nuxt",
@@ -21,6 +21,7 @@
     "core-js": "^3.25.3",
     "gh-pages": "^5.0.0",
     "nuxt": "^2.15.8",
+    "nuxt-gsap-module": "^2.0.0",
     "nuxt-i18n": "^6.28.1",
     "tailwindcss": "^3.3.1",
     "vue": "^2.7.10",

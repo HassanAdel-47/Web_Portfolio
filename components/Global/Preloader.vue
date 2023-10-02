@@ -6,10 +6,10 @@
       <div class="flex flex-col justify-center items-center">
         <img
           src="../../public/assets/images/15.png"
-          class="w-3/4 md:w-1/4"
+          class="w-3/4 md:w-1/4 preloaderImg"
           alt=""
         />
-        <div class="relative flex items-center justify-center">
+        <div class="relative flex items-center justify-center preloader">
           <h1 class="mr-3 text-5xl font-[200] text-white">loading</h1>
           <div
             class="w-10 h-10 border-4 border-gray-200 rounded-full animate-spin"
@@ -22,7 +22,61 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  mounted() {
+    const gsap = this.$gsap;
+    this.boxRotation();
+    gsap.to(".preloader", {
+      opacity: 0,
+      duration: 0,
+    });
+    setTimeout(
+      function () {
+        gsap.fromTo(
+          ".preloaderImg",
+          { y: -400, duration: 2, ease: "bounce.out" },
+          { y: +0, duration: 2, ease: "bounce.out" }
+        );
+      }.bind(this),
+      50
+    );
+    setTimeout(
+      function () {
+        gsap.to(".preloader", {
+          opacity: 1,
+          duration: 2,
+          ease: "bounce.out",
+        });
+      }.bind(this),
+      1500
+    );
+  },
+
+  methods: {
+    boxRotation() {
+      const gsap = this.$gsap;
+      setTimeout(
+        function () {
+          gsap.to(".preloaderImg", {
+            duration: 0.5,
+            opacity: 0,
+            x: -100,
+            stagger: 0.1,
+            ease: "back.in",
+          });
+          gsap.to(".preloader", {
+            duration: 0.5,
+            opacity: 0,
+            x: +100,
+            stagger: 0.1,
+            ease: "back.in",
+          });
+        }.bind(this),
+        3200
+      );
+    },
+  },
+};
 </script>
 
 <style></style>

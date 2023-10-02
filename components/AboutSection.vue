@@ -47,8 +47,6 @@
     >
       <img src="../public/assets/images/about en.png" alt="" />
     </div>
-    <input v-model="myname" placeholder="Enter your name" />
-    <p>Welcome, {{ fullName }}</p>
   </section>
 </template>
 <script>

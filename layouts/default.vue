@@ -41,14 +41,13 @@ export default {
   },
 
   mounted() {
+    let gsap = this.$gsap;
     window.addEventListener("scroll", this.handleScroll);
-    console.log("loading", this.loading);
     setTimeout(
       function () {
         this.loading = false;
-        console.log("loading", this.loading);
       }.bind(this),
-      2000
+      3800
     );
   },
 
