@@ -20,7 +20,7 @@
         >{{ $t("Designer") }}
       </p>
       <a
-        href="https://drive.google.com/uc?export=download&id=19nqw4F2aaw3ooZhHkBjrD-taNlsqh2lD"
+        href="https://docs.google.com/document/d/1izUe5g2dzgfdR9Lc1A3zeTBvDiTG0aCh/edit?usp=sharing&ouid=100565372178365443789&rtpof=true&sd=true"
         class="bg-blue-400 hover:bg-blue-700 mt-5 duration-1500 text-white py-2 px-4 rounded duration-1000"
         target="_blank"
       >
