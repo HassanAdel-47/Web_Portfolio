@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import Test from "./Test.vue";
 import FirstSection from "./FirstSection.vue";
 import AboutSection from "./AboutSection.vue";
 import ServicesSection from "./ServicesSection";
