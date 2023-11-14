@@ -24,9 +24,9 @@
     "nuxt-gsap-module": "^2.0.0",
     "nuxt-i18n": "^6.28.1",
     "tailwindcss": "^3.3.5",
-    "vue": "^2.7.14",
-    "vue-server-renderer": "^2.7.14",
-    "vue-template-compiler": "^2.7.14"
+    "vue": "^2.7.15",
+    "vue-server-renderer": "^2.7.15",
+    "vue-template-compiler": "^2.7.15"
   },
   "resolutions": {
     "postcss-preset-env": "^7.0.0"
